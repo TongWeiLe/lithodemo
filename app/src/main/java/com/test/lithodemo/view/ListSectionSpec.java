@@ -36,7 +36,6 @@ public class ListSectionSpec {
                     SingleComponentSection.create(c)
                             .key(String.valueOf(i))
                             .component(ListItem.create(c)
-                                    .color(i % 2 == 0 ? Color.GREEN : Color.BLUE)
                                     .title(i + list.get(i))
                                     .index(i)
                                     .subtitle("litho")

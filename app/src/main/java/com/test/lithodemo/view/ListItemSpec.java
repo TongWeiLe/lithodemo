@@ -20,7 +20,6 @@ import com.facebook.yoga.YogaEdge;
 import com.test.lithodemo.R;
 
 import static com.facebook.yoga.YogaEdge.ALL;
-
 @LayoutSpec
 public class ListItemSpec {
 
@@ -41,7 +40,7 @@ public class ListItemSpec {
                                     .text(subtitle)
                                     .textSizeSp(20))
                     .child(
-                            Image.create(c).drawableRes(R.drawable.ic_launcher_round).widthDip(50).heightDip(50)).clickHandler(ListItem.onListClicked(c, "可点击"))
+                            Image.create(c).drawableRes(R.drawable.img_1)).clickHandler(ListItem.onListClicked(c, "可点击"))
 
 
                     .build();
@@ -49,7 +48,7 @@ public class ListItemSpec {
             return Row.create(c).backgroundColor(Color.WHITE).child(
                     Text.create(c).text("横着").textColor(Color.BLACK)
             ).child(
-                    Image.create(c).drawableRes(R.drawable.ic_launcher_round).marginDip(YogaEdge.LEFT, 50)
+                    Image.create(c).drawableRes(R.drawable.img_2).marginDip(YogaEdge.LEFT, 50)
             ).build();
         }
 
